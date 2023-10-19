@@ -1,0 +1,113 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(asset/tour.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    padding-top: 3%;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav, ul, li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav, ul, li, a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* .row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}  */
+
+/* .col {
+    flex-basis: 50%;
+} */ 
+
+.row {
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.ask {
+    background: none;
+    border: 2px solid #000;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4 linear;
+    position: relative;
+}
+
+.ask:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    color: #fff;
+
+    background-color: #17141F;
+}

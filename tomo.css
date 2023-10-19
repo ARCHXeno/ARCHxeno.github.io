@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    background-color: #17141F;
+    background-image: url(asset/SAT_GULTOR_81_KOPASSUS_____AdobeExpress\ \(1\).gif);;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: rgb(255, 255, 255);
+}
+
+
+.img-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.link-item {
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #17141F;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin: 3px 7px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-item {
+    background: none;
+    border: 2px solid #000;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4 linear;
+    position: relative;
+}
+
+.link-item:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    color: #fff;
+
+    background-color: #17141F;
+}
